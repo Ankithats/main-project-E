@@ -1,0 +1,387 @@
+
+.fea{
+    display: flex;
+    padding: 5%;
+  }
+  
+  .laast{
+     margin-left:10%; 
+     color:white;
+   
+  
+  }
+  .ist{
+    background-color: rgba(16, 16, 16, 0.943);
+    text-align: left;
+    margin-top: 0%;
+    margin-top: 5%;
+    height: 500px; ;
+     
+  }
+  @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+  .coo {
+    color: #e5e5e5;
+    font-size:larger;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding-top: 5%; */
+  }
+  
+  .animation {
+    height:60px;
+    overflow:hidden;
+    margin-left: 2rem;
+  }
+  
+  .animation > div > div {
+    padding: 0.25rem 0.75rem;
+    height:2.81rem;
+    margin-bottom: 2.81rem;
+    display:inline-block;
+  }
+  
+  .animation div:first-child {
+    animation: text-animation 15s infinite;
+  }
+  
+  .first div {
+    
+  }
+  .second div {
+    
+  
+  }
+  .third div {
+  
+  }
+  
+  @keyframes text-animation {
+    0% {margin-top: 2%;}
+    10% {margin-top: 2%;}
+    20% {margin-top: -4.62rem;}
+    30% {margin-top: -4.62rem;}
+    40% {margin-top: -10.24rem;}
+    60% {margin-top: -10.24rem;}
+    70% {margin-top: -4.62rem;}
+    80% {margin-top: -4.62rem;}
+    90% {margin-top: 2%;}
+    100% {margin-top: 2%;}
+  }
+
+
+    .pi img{
+    width:15vw;
+    height: 30vh;
+    padding-left: 5%;
+    padding-top: 2%;
+    margin-top: 12%;
+    margin-left: 5%;
+  } 
+
+  .pi{
+     /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;  */
+
+    height:450px;
+    width:350px;
+    background-color:#f9f9f9;
+    border-color:#f5f5f5;
+    position: relative;
+ }
+
+
+
+
+ *{
+  box-sizing: border-box;
+}
+
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+
+  padding-right: 40px;
+  color:rgb(90, 90, 90);
+}
+.input-search::placeholder{
+  color:rgb(92, 86, 86);
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  right: 0px;
+  color:gray ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgb(37, 37, 37);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.icon-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+
+
+.login{
+  background-color: white;
+  
+  height:700px;
+  padding-left: 10%;
+  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+.log{
+  background-color: white;
+  width:600px;
+  
+  height:500px;
+  padding-left: 10%;
+  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+} 
+
+
+
+.button-62 {
+  background: linear-gradient(to bottom right,#646464, #000000, #363636);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  width:150px;
+}
+
+.button-62:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(97, 22, 22, 0.5), .125rem .125rem 1rem rgba(91, 15, 15, 0.975);
+}
+
+.button-62:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(93, 16, 16, 0.5), .125rem .125rem 1rem rgba(95, 17, 17, 0.5);
+}
+
+
+.up{
+  background-color: rgb(13, 7, 2);
+  color: white;
+}
+.dl{
+  background-color: rgb(13, 7, 2);
+  color: white;
+
+}
+.dti{
+  width: 100%;
+  position: relative;
+  height: 800px;
+
+}
+
+
+.dtz{
+  position: absolute;
+
+  top: 25%;
+  left: 9%;
+  width: 60%;
+}
+
+
+/* 
+.gallery {
+  --z: 1px; 
+  --s: 360px; 
+  --g: 0px;   
+  
+  display: grid;
+  gap: var(--g);
+  width: calc(2*var(--s) + var(--g));
+  grid-auto-flow: column;
+
+  
+}
+.gallery > img {
+  width: 0;
+  min-width: calc(100% + var(--z));
+  height: var(--s);
+  object-fit: cover;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+  cursor: pointer;
+  transition: .9s;
+}
+.gallery > img:hover {
+  width: calc(var(--s)/3);
+}
+.gallery > img:first-child {
+  place-self: start;
+
+  --mask: 
+    conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg) 
+      50%/100% calc(2*var(--z)) repeat-y;
+}
+.gallery > img:last-child {
+  place-self: end;
+  clip-path: polygon(0 0,100% 0,calc(100% - 2*var(--z)) 100%,0 100%);
+  --mask: 
+    conic-gradient(from   45deg at left ,#0000,#000 1deg 89deg,#0000 90deg) 
+      50% calc(50% - var(--z))/100% calc(2*var(--z)) repeat-y;
+} */
+
+
+.gallery {
+  --z: 1px;  /* control the zig-zag  */
+  --s: 360px; /* control the size */
+  --g: 0px;   /* control the gap */
+  
+  display: grid;
+  gap: var(--g);
+  width: calc(2*var(--s) + var(--g));
+  grid-auto-flow: column;
+  position: relative;
+}
+.gallery > img {
+  width: 0;
+  min-width: calc(100% + var(--z));
+  height: var(--s);
+  object-fit: cover;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+  cursor: pointer;
+  transition: .9s;
+}
+.gallery > img:hover {
+  width: calc(var(--s)/1);
+}
+.gallery > img:first-child {
+  place-self: start;
+
+  --mask: 
+    conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg) 
+      50%/100% calc(2*var(--z)) repeat-y;
+}
+.gallery > img:last-child {
+  place-self: end;
+  clip-path: polygon(0 0,100% 0,calc(100% - 2*var(--z)) 100%,0 100%);
+  --mask: 
+    conic-gradient(from   45deg at left ,#0000,#000 1deg 89deg,#0000 90deg) 
+      50% calc(50% - var(--z))/100% calc(2*var(--z)) repeat-y;
+}
+
+.fi{
+  
+
+  list-style-type: none;
+
+  overflow: hidden;
+ 
+
+  position:fixed
+}
+
+.im{
+  background-color:peachpuff;
+  margin-top: 5%;
+  height:900px;
+  position:relative;
+  padding-top: 0%;
+  margin-bottom:10%;
+ }
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #000000;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+/* .sp{
+  background-color: black;
+  width:15%;
+  margin-top:3%;
+ margin-left: 25%;
+ 
+} */
+.catt:hover{
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: #646464;
+    
+}
+.cattt:hover{
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+}

@@ -1,0 +1,122 @@
+{% load static %}
+
+<nav class="navbar ">
+  <div style="background-color: black; height:40px;" class="container-fluid enj">
+    <main class="container coo">
+  
+      <section class="animation">
+        <div class="first"><div>15% off your first order| select style | buy </div></div>
+        <div class="second"><div>Extra 5% Discount For Online Payments</div></div>
+        <div class="third"><div>       Free Deliveries. Free Returns</div></div>
+      </section>
+    </main>
+
+  </div>
+
+</nav> 
+
+<nav class="navbar navbar-expand-lg ll">
+    <div style="background-color:white;" class="container-fluid  d-flex justify-content-start my-0 mee">
+      <div class="navbar-nav">
+        <a class="nav-link active  ms-4" aria-current="page" href="{% url 'app:home' %}"><span style="font-size: large;color:black;font-weight:bold;">Home</span></a>
+     
+
+  
+
+        <li class="nav-item dropdown bt">
+          <a class="nav-link ms-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="{% static 'images/icons8-3-dots-30.png' %}" alt="">
+            
+          </a> 
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About us</a></li>
+            <li><a class="dropdown-item" href="#">Help</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">mobile apps</a></li>
+            <li><a class="dropdown-item" href="#">feed back</a></li>
+          
+          </ul>
+
+          <li  class="nav-item">
+            <a class="nav-link ms-4" href="#"><img src="{% static 'images/icons8-globe-24 (4).png' %}" alt=""></a>
+           </li>
+    
+      </div>
+   
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+        <a style="color: rgb(0, 0, 0);" class="navbar-brand me-5 mt-0 " href="#"><img style="width:350px" src="{% static 'images/Screenshot_2024-02-22_143932-removebg-preview.png' %}" alt=""></a>
+        
+      </div> 
+     
+          
+        <ul class="nav justify-content-end">
+          {% if user.is_authenticated %}
+            <li  class="nav-item">
+              <a class="nav-link a " aria-current="page" href="#"><span style="font-size: large;color:rgb(3, 2, 2);font-weight:bold;">{{user.username}}</span></a>
+            </li>
+            <li  class="nav-item">
+             <a class="nav-link" href="{% url 'app:logout' %}"><img src="{% static 'images/icons8-log-out-32.png' %}" alt=""></a>
+            </li>
+          {% else %}
+            <li class="nav-item ">
+              <a class="nav-link" href="{% url 'app:login' %}"><img src="{% static 'images/icons8-person-32.png' %}" alt=""></a>
+            </li>
+        {% endif %}
+           
+
+      
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="{% static 'images/icons8-heart-32 (4).png' %}" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-4" href="{% url 'cart:displaycart' %}"><img src="{% static 'images/icons8-shopping-bag-32.png' %}" alt=""></a>
+        </li> 
+      </ul> 
+     
+    </div>
+  </nav>
+  <nav class="navbar ">
+    <div style="background-color:white;" class="container-fluid  d-flex justify-content-start my-0 moo">
+     
+        
+          
+          {% for cat in category %}
+          
+
+          
+       
+          <a class="nav-link me-4 ms-4" aria-current="page" href="{% url 'app:prod_by_cat' cat.slug %}"><span class="catt" style="font-size:20px;color:rgb(57, 57, 57);">{{cat.name}}</span></a>
+    
+          {% endfor %}
+          <a class="nav-link me-4 ms-4" aria-current="page" href="#"><span class="cattt" style="font-size:20px;color:rgb(146, 40, 40);">Sale</span></a>
+
+
+
+
+        
+    
+      
+      <!-- <input style="width: 250px;" class="form-control me-2 box"  type="search" placeholder= "Search products" aria-label="Search">
+      <button class="button-56" role="button">
+        <img src="{% static 'images/llll.png' %}" alt=""> -->
+        
+        
+        <div class="search-box my-0">
+          <form style="margin-left: 90%;" class="d-flex " role="search" action="{% url 'search:search' %}" method="GET">
+          <button class="btn-search"><img src="{% static 'images/icons8-search-24 (4).png' %}" alt=""></button>
+          <input type="text" class="input-search" name="q" placeholder="Search products...">
+         
+        </div>
+      
+        
+        
+      
+    </form> 
+ 
+      
+    </div>
+  </div>
+  </nav>
